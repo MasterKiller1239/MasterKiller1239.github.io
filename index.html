@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://cdnjs.cloudflare.com" rel="preconnect"/>
+
+    <title>Jakub Grobelkiewicz | Game Developer</title>
+
+    <meta content="MasterKiller1239, Unity, C#, UnrealEngine, C++, GameDeveloper" name="keywords"/>
+
+    <meta content="Jakub Grobelkiewicz | Game Developer" name="description"/>
+
+    <link rel="icon" type="image/gif" href="./assets/ShadowNight.gif">
+
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta content="#36d1dc" name="theme-color"/>
+
+    <!-- Open Graph / Facebook -->
+    <meta content="website" property="og:type"/>
+    <meta content="https://MasterKiller1239.github.io/" property="og:url"/>
+    <meta content="Jakub Grobelkiewicz | Game Developer" property="og:title"/>
+    <meta content="Game Developer Portfolio" property="og:description"/>
+    <meta
+            content="https://MasterKiller1239.github.io/assets/thumbnail.png"
+            property="og:image"
+    />
+
+    <!-- Twitter -->
+    <meta content="summary_large_image" property="twitter:card"/>
+    <meta content="https://MasterKiller1239.github.io/" property="twitter:url"/>
+    <meta content="Jakub Grobelkiewicz | Game Developer" property="twitter:title"/>
+    <meta content="Game Developer Portfolio" property="twitter:description"/>
+    <meta
+            content="https://MasterKiller1239.github.io/assets/thumbnail.png"
+            property="twitter:image"
+    />
+
+    <!-- link tags -->
+    <link as="style" href="./style/main.css" rel="preload"/>
+    <link href="./style/main.css" rel="stylesheet"/>
+
+    <!-- FontAwesome Icons link -->
+    <link
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            referrerpolicy="no-referrer"
+            rel="stylesheet"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+            defer
+            src="./javascript/scrollveal.js"
+            type="text/javascript"
+    ></script>
+
+</head>
+
+<body>
+<!-- Hero Section -->
+<div id="hero">
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="assets/video/Montage.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <section class="container">
+        <h1 class="hero-title">
+            Hi, my name is <span class="name">Jakub Grobelkiewicz</span>
+            <br/>
+            I am the Game Developer.
+        </h1>
+        <p class="hero-cta">
+            <a class="cta-btn cta-btn--resume" href="#about">About me</a>
+        </p>
+    </section>
+
+    <a aria-label="scroll-down" class="scroll-down-link" href="#about">
+        <div class="scroll-down"></div>
+    </a>
+</div>
+<!-- /END Hero Section -->
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+            <div class="about-wrapper__image"><a href="https://steamcommunity.com/id/MasterKiller1239/">
+                <img
+						id="profile-image"
+                        alt="Profile Image"
+                        class="img-fluid"
+                        height="350"
+                        src="./assets/profile.jpg"
+                        width="350"
+                /></a>
+            </div>
+            <div class="about-wrapper__info">
+                <p class="about-wrapper__info-text">
+                    Hi, my name is Jakub Grobelkiewicz.<br>
+                    I am:</p>
+                <ul>
+                    <li>Game Developer since 2019</li>
+                    <li>Graduate of Applied Computer Science at the Technical University of Lodz with a specialization
+                        in
+                        Game Development and Computer Simulation
+                    </li>
+                </ul>
+                <p class="about-wrapper__info-text">
+                    
+Here you can find some of my professional and personal projects. For more details on my professional work, take a look at my résumé or LinkedIn profile. I am a quick learner who loves to constantly explore new concepts and ideas (sometimes falling into various rabbit holes). While working with designers, I always try to look at ideas from both the technical and user sides to provide the best experience that works the best given existing systems and limitations.
+
+In addition to my professional endeavors, I also indulge in gaming as a hobby, not just for entertainment but also for seeking out interesting solutions and inspiration.
+                </p>
+                <span class="about-wrapper__cta">
+              <a class="cta-btn cta-btn--resume"
+                 href="https://drive.google.com/drive/folders/1QwBePd0cdW_hmEwTjvbfAD18g3uqzwV5?usp=sharing">View Resume</a>
+            </span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /END About Section -->
+<script>
+    const images = ['./assets/profile.jpg', './assets/ShadowNight.gif']; // Lista obrazków do zmiany
+    let currentIndex = 0; // Aktualny indeks obrazka w liście
+
+    // Funkcja zmieniająca obrazek co określony czas i z efektem "szachownicy"
+    function changeImage() {
+        const profileImage = document.getElementById('profile-image');
+        profileImage.src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length; // Przejście do następnego obrazka w liście
+    }
+
+    setInterval(changeImage, 10000); 
+</script>
+<!--Projects Section-->
+<section id="projects">
+    <div class="container">
+        <div class="project-wrapper">
+            <h2 class="section-title dark-blue-text">Professional Work</h2>
+
+            <!-- Feudal Baron: King's Land -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Feudal Baron: King's Land - Sim Farm S.A.</h3>
+                    <p class="project-wrapper__text-info"> 04.2023 - 03.2024</p>
+                    <p class="project-wrapper__text-info">
+                        Would you make a good Feudal Baron? Establish and develop a medieval settlement. Create a prosperous city, take care of its inhabitants and make tough decisions.
+                    </p>
+                    <p class="project-wrapper__text-info">
+                        In this project, I helped with bug fixing, refactors and maintenance of the game code. Worked on base game.
+                    </p>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href="https://store.steampowered.com/app/1674530/Feudal_Baron_Kings_Land/
+" rel="noopener noreferrer"
+                       target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="https://cdn.akamai.steamstatic.com/steam/apps/1674530/header.jpg?t=1711527906"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://store.steampowered.com/app/1674530/Feudal_Baron_Kings_Land/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Steam Page</a>
+                    </div>
+                </div>
+            </article>
+            <!-- /END Feudal Baron: King's Land -->
+
+            <!-- UNDERCOVER - BLOOD BONDS -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">UNDERCOVER - BLOOD BONDS – SQRT3</h3>
+                    <p class="project-wrapper__text-info"> 06.2023 - 03.2023</p>
+                    <p class="project-wrapper__text-info">
+                        Help Vera find her missing sister as strange things emerge as night falls!
+                    </p>
+                    <p class="project-wrapper__text-info">
+                       In this project, I helped with bug fixing, refactors and maintenance of the game code. Worked on base game.
+                    </p>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href="https://store.steampowered.com/app/2193410/Undercover__Blood_Bonds/" rel="noopener noreferrer"
+                       target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="https://cdn.akamai.steamstatic.com/steam/apps/2193410/header.jpg?t=1668672023"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://store.steampowered.com/app/2193410/Undercover__Blood_Bonds/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Steam Page</a>
+                    </div>
+                </div>
+            </article>
+            <!-- /END BLOOD BONDS -->
+			
+ <!-- UNDERCOVER - BLOOD BONDS -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Secret Diaries: Manage a Manor – SQRT3</h3>
+                    <p class="project-wrapper__text-info"> 06.2023 - 03.2023</p>
+                    <p class="project-wrapper__text-info">
+                        Help Jane decide what she truly wants before it’s too late!
+                    </p>
+                    <p class="project-wrapper__text-info">
+                       In this project, I helped with bug fixing, refactors and maintenance of the game code. Worked on base game.
+                    </p>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href="https://store.steampowered.com/app/2230800/Secret_Diaries_Manage_a_Manor/" rel="noopener noreferrer"
+                       target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="https://cdn.akamai.steamstatic.com/steam/apps/2230800/header.jpg?t=1695737494"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://store.steampowered.com/app/2230800/Secret_Diaries_Manage_a_Manor/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Steam Page</a>
+                    </div>
+                </div>
+            </article>
+            <!-- /END BLOOD BONDS -->
+			 <!-- UNDERCOVER - BLOOD BONDS -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Elena's Journal: To Atlantis – SQRT3</h3>
+                    <p class="project-wrapper__text-info"> 06.2023 - 03.2023</p>
+                    <p class="project-wrapper__text-info">
+                        Discover the lost secrets of Atlantis in this Time Management Adventure!
+                    </p>
+                    <p class="project-wrapper__text-info">
+                       In this project, I helped with bug fixing, refactors and maintenance of the game code. Worked on base game.
+                    </p>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href="https://store.steampowered.com/app/2377120/Elenas_Journal_To_Atlantis/" rel="noopener noreferrer"
+                       target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="https://cdn.akamai.steamstatic.com/steam/apps/2377120/header.jpg?t=1681971258"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://store.steampowered.com/app/2377120/Elenas_Journal_To_Atlantis/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Steam Page</a>
+                    </div>
+                </div>
+            </article>
+            <!-- /END BLOOD BONDS -->
+            <h2 class="section-title dark-blue-text">Personal Projects</h2>
+
+            <!-- DuckingBread -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Ducking Bread – Torment NG++</h3>
+                    <p class="project-wrapper__text-info"> 03.2021 - 06.2021 </p>
+                    <p class="project-wrapper__text-info">
+                        "Ducking Bread" is a dynamic mobile game where players take on the role of a caretaker of a pond, attempting to deter ducks from unhealthy food and guide them towards healthier treats.
+"Ducking Bread" not only provides entertainment but also educates players about healthy nutrition for wild birds, promoting ecological awareness and care for nature.
+                    </p>
+                    <p class="project-wrapper__text-info">
+                        <b>Top3 in "Mobile Games" Category with special awards
+                            from:</b><br>
+                    </p>
+                    <ul class="bolded">
+                        <li>Render Cube</li>
+                    </ul>
+                    <p class="project-wrapper__text-info">
+                        "Ducking Bread" was a project developed in Unity, where I served as the programmer, level designer, gameplay designer, and was responsible for creating shaders such as water, grass, outlines, and snow effects.
+
+As the programmer, I was tasked with implementing game mechanics, user interface elements, and ensuring smooth gameplay functionality. In my role as a level designer, I crafted engaging and challenging levels, considering player progression and difficulty curve.
+
+As the gameplay designer, I conceptualized and fine-tuned the core mechanics of the game, balancing player interactions and challenges to create an enjoyable experience. Additionally, I was responsible for iterating on gameplay elements based on user feedback and playtesting results.
+
+Creating shaders was another aspect of my role, where I utilized Unity's Shader Graph or wrote custom shaders to achieve visual effects such as realistic water ripples, dynamic grass movement, distinct outlines for game objects, and immersive snowfall effects.
+
+Overall, my multi-faceted involvement in the development of "Ducking Bread" allowed me to contribute to various aspects of the game's creation, from its fundamental programming to its visual aesthetics, resulting in a cohesive and engaging gaming experience.
+                    </p>
+
+
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href=" https://vimeo.com/564771699" rel="noopener noreferrer" target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="https://media.licdn.com/dms/image/C4E2DAQGLA1I2NYejwg/profile-treasury-image-shrink_800_800/0/1623251989318?e=1713949200&v=beta&t=0xaoQFxSejHMsbW5tRJ0WwJTcFnfuknMKcnAsF3LXvc"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://drive.google.com/file/d/1TlXOKBDUZ751TTY8JQQ8WNXQCz9TOJut/view"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Android App</a>
+                        <a class="cta-btn cta-btn--hero cta-btn--projects" 
+                        rel="noopener noreferrer"
+                        target="_blank"href="https://vimeo.com/564771699"
+                        >Video</a>
+                    </div>
+                </div>
+            </article>
+            <!-- /END DuckingBread -->
+
+            <!-- Fairy Garden -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Fairy Garden – Torment NG++</h3>
+
+                    <p class="project-wrapper__text-info">03.2021 - 06.2021</p>
+
+                    <p class="project-wrapper__text-info">
+                        Fairy Garden is a 3D cooperative VR game where players task is to collaborate and cultivate plants.
+                    </p>
+                    <p class="project-wrapper__text-info">
+                        <b>Winner of 2021 ZTGK Contest in the  Virtual Environment Category with special awards
+                            from:</b><br>
+                    </p>
+                    <ul class="bolded">
+                        <li>Render Cube</li>
+                    </ul>
+
+                    <p class="project-wrapper__text-info">
+                        "Fairy Garden" is a cooperative VR game created in Unity, where I was responsible for shaders.
+                    </p>
+
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href="https://vimeo.com/564822476" rel="noopener noreferrer" target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="https://media.licdn.com/dms/image/C4E2DAQFHwB2pdlwhkg/profile-treasury-image-shrink_800_800/0/1624352600300?e=1713949200&v=beta&t=TzXjhpyCioLiTk58502wFTGezz8_i1BrndiaHqoRJu4"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                    <div class="project-wrapper__text-btns">
+                        <a class="cta-btn cta-btn--hero cta-btn--projects" 
+                        rel="noopener noreferrer"
+                        target="_blank"
+                           href="https://drive.google.com/file/d/1uksXxQ3EDkLc3CWQtxy_eDyLxBg8D4pn/view" target="_blank"
+                        >Release</a>
+                        <a class="cta-btn cta-btn--hero cta-btn--projects" 
+                        rel="noopener noreferrer"
+                        target="_blank" href="https://vimeo.com/564822476"
+                           target="_blank"
+                        >Video</a>
+                    </div>
+                </div>
+            </article>
+            <!-- /END Fairy Garden -->
+
+
+        </div>
+    </div>
+</section>
+<!-- End Projects Section -->
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+            <p class="contact-wrapper__text">Let's get in touch!</p>
+            <a class="cta-btn cta-btn--resume" href="mailto:majsterjames@gmail.com">Contact me</a>
+        </div>
+    </div>
+</section>
+<!-- END Contact Section -->
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <a aria-label="go back to top" class="back-to-top" href="#hero">
+            <i aria-hidden="true" class="fa fa-angle-up fa-2x"></i>
+        </a>
+        <div class="social-links">
+            <a
+                    aria-label="linkedin"
+                    href="https://www.linkedin.com/in/jakub-grobelkiewicz-7bb3971b3/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+            >
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+                    aria-label="github"
+                    href="https://github.com/MasterKiller1239"
+                    rel="noopener noreferrer"
+                    target="_blank"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <hr/>
+        <p class="footer__text">
+            &copy; <span id="year"></span> - Template by
+            <a
+                    href="https://github.com/AnilSeervi"
+                    rel="noopener noreferrer"
+                    target="_blank"
+            >Anil Seervi</a
+            >. <br/>Made with &hearts;
+        </p>
+    </div>
+</footer>
+<!-- END Footer Section -->
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear()
+</script>
+<script src="./javascript/vanilla-tilt.min.js"></script>
+<script src="./javascript/valtilt.js" type="text/javascript"></script>
+</body>
+</html>
