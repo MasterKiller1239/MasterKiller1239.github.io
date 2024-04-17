@@ -98,7 +98,7 @@
 						id="profile-image"
                         class="img-fluid"
                         height="350"
-                        src="./assets/profile.jpg"
+                        src="./assets/profile.png"
                         width="350"
                 /></a>
             </div>
@@ -128,7 +128,19 @@ In addition to my professional endeavors, I also indulge in gaming as a hobby, n
     </div>
 </section>
 <!-- /END About Section -->
+<script>
+    const images = ['./assets/profile.png', './assets/ShadowNight.gif']; // Lista obrazków do zmiany
+    let currentIndex = 0; // Aktualny indeks obrazka w liście
 
+    // Funkcja zmieniająca obrazek co określony czas i z efektem "szachownicy"
+    function changeImage() {
+        const profileImage = document.getElementById('profile-image');
+        profileImage.src = images[currentIndex];
+        currentIndex = (currentIndex + 1) % images.length; // Przejście do następnego obrazka w liście
+    }
+
+    setInterval(changeImage, 10000); 
+</script>
 <!--Projects Section-->
 <section id="projects">
     <div class="container">
