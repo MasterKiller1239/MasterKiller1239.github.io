@@ -4,6 +4,7 @@
     <meta charset="UTF-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="hamburger.js"></script>
     <link href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://cdnjs.cloudflare.com" rel="preconnect"/>
 
@@ -42,7 +43,7 @@
     <!-- link tags -->
     <link as="style" href="./style/main.css" rel="preload"/>
     <link href="./style/main.css" rel="stylesheet"/>
-
+    <link rel="stylesheet" href="./style/hamburger.css">
     <!-- FontAwesome Icons link -->
     <link
             crossorigin="anonymous"
@@ -61,6 +62,7 @@
 </head>
 
 <body>
+   
 <!-- Hero Section -->
 <div id="hero">
     <div class="video-container">
@@ -130,7 +132,7 @@ In addition to my professional endeavors, I also indulge in gaming as a hobby, n
 <!-- /END About Section -->
 <script>
     const images = ['https://avatars.githubusercontent.com/u/50194718?v=4', './docs/assets/ShadowNight.gif']; 
-    let currentIndex = 0; // Aktualny indeks obrazka w liście
+    let currentIndex = 0;
 
     function changeImage() {
         const profileImage = document.getElementById('profile-image');
@@ -144,7 +146,7 @@ In addition to my professional endeavors, I also indulge in gaming as a hobby, n
 <section id="projects">
     <div class="container">
         <div class="project-wrapper">
-            <h2 class="section-title dark-blue-text">Professional Work</h2>
+            <h2 class="section-title dark-blue-text" id = "professional">Professional Work</h2>
 <h3 class="section-title dark-blue-text">Unity C#</h3>
             <!-- Feudal Baron: King's Land -->
             <article class="row">
@@ -350,7 +352,7 @@ In addition to my professional endeavors, I also indulge in gaming as a hobby, n
                 </div>
             </article>
             <!-- /END BLOOD BONDS -->
-            <h2 class="section-title dark-blue-text">Personal Projects</h2>
+            <h2 class="section-title dark-blue-text" id = "personal">Personal Projects</h2>
 <h3 class="section-title dark-blue-text">Unity C#</h3>
             <!-- DuckingBread -->
             <article class="row">
@@ -662,6 +664,52 @@ Overall, my multi-faceted involvement in the development of "Ducking Bread" allo
             >Certificate</a>  
         </div>
     </div>
+</article>
+</article>  <!-- ArgonAssault -->
+<article class="row">
+  <div class="project-wrapper__text">
+      <h3 class="project-wrapper__text-title">Advanced Shaders
+</h3>
+
+      <p class="project-wrapper__text-info">05.2024</p>
+
+      <p class="project-wrapper__text-info">
+           Advanced shaders of snow, water and fire using Shader Graph
+      </p>
+       <p class="project-wrapper__text-info">Skills I Have Learned</p>
+   <ul>  
+    <li>Create procedural textures that add depth and realism to your environments</li>
+    <li>Design custom lighting effects that illuminate your scenes with stunning precision</li>
+    <li>Develop unique visual effects that enhance gameplay and engage players</li>
+    <li>Explore advanced shader techniques to push the boundaries of visual storytelling</li>
+</ul>
+
+  </div>
+
+  <div class="project-wrapper__image">
+      <a href="https://github.com/MasterKiller1239/SoulsLikeDemoGame" rel="noopener noreferrer" target="_blank">
+          <div class="thumbnail rounded">
+              <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      height="767"
+                      src="https://media.githubusercontent.com/media/MasterKiller1239/MasterKiller1239.github.io/main/docs/assets/SoulsLike.jpg"
+                      width="1366"
+              />
+          </div>
+      </a>
+      <div class="project-wrapper__text-btns">
+         
+          <a class="cta-btn cta-btn--hero cta-btn--projects" 
+          rel="noopener noreferrer"
+          target="_blank"
+             href="https://github.com/MasterKiller1239/SoulsLikeDemoGame" target="_blank"
+          >Github</a>
+          <a class="cta-btn cta-btn--hero cta-btn--projects"  href="https://www.udemy.com/certificate/UC-91d395a8-ba57-4506-8e64-52c1a02d28a7/"
+             target="_blank"
+          >Certificate</a>  
+      </div>
+  </div>
 </article>
 <h3 class="section-title dark-blue-text">Unreal Engine 5 C++ and Blueprints</h3>
      <!-- Arctic Assault -->
